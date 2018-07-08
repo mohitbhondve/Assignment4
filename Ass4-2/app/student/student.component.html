@@ -1,0 +1,11 @@
+
+<div>
+  <button class="btn btn-primary" (click)="getData()"> View Student data</button>
+</div>
+
+<div *ngIf = "student">
+
+    <ul *ngFor=" let stud of student">
+      <li> {{stud.id}} - {{stud.name}} - {{stud.city}}</li>
+    </ul>
+</div>

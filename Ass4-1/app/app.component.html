@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+    <app-child [msg] = "message" (childMsg)="childmsg=$event"></app-child>
+
+</div>
+<div>
+    {{ childmsg }}
+</div>
